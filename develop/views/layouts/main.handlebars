@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/develop/public/css/jass.css">
+    <link rel="stylesheet" href="/develop/public/css/style.css">
+</head>
+
+<body class="site">
+
+    <header class="display-flex justify-space-between align-center p-4 bg-primary jumbotron">
+        <h1 class="text-white bg-dark">The Tech Blog</h1>
+        <nav>
+            <a class="mr-5" href="/">Home</a>
+            {{#if logged_in}}
+            <a class="mr-5" href="../dashboard.handlebars">Dashboard</a> |
+            <a class="mr-5" id="logout" href="#">Logout</a>
+            {{else}}
+            <a class="mr-5" href="../login.handlebars">Login</a>
+            {{/if}}
+        </nav>
+    </header>
+
+    <main class="outer-container site-content">
+        {{{ body }}}
+    </main>
+
+    <footer class="jumbotron footer"></footer>
+
+    {{#if logged_in}}
+    <script src="/develop/public/js/logout.js"></script>
+    {{/if}}
+</body>
+
+</html>
