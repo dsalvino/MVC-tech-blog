@@ -1,0 +1,19 @@
+<!-- Loop over each object in the blogposts array -->
+<h2 class="mt-5 mb-5 ml-5">Latest Blog Posts:</h2>
+<div class="container container-fluid mt-5">
+{{#each blogposts as |blog| }}
+<div class="row mb-4">
+  <div class="col-md-5">
+    <h2>
+      <a href="/blog/{{blog.id}}">{{blog.blog_title}}</a>
+    </h2>
+    <p>Created by {{blog.author.name}} on {{format_date blog.date_created}}</p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{blog.blog_content}}
+    </p>
+  </div>
+</div>
+{{/each}}
+</div>

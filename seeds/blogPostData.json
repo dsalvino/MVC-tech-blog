@@ -1,0 +1,17 @@
+[
+  {
+    "blog_title": "Why MVC is so important",
+    "blog_content": "MVC allows developers to maintain a true separation of concerns, devising their code between the Model layer for data, the View layer for design, and the Controlller layer for application logic.",
+    "author_id": 1
+  },
+  {
+    "blog_title": "Authentication vs. Authorization",
+    "blog_content": "There is a difference between authentication and authorization. Authentication means confirming your own identity, whereas authorization means being allowed access to the system.",
+    "author_id": 2
+  },
+  {
+    "blog_title": "Object-Relational Mapping",
+    "blog_content": "Object-Relational Mapping, better known as ORM, allows you to model your data using sequelize and helps simplify the way you build your relational database and execute queries.",
+    "author_id": 3
+  }
+]

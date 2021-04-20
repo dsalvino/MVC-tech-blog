@@ -1,0 +1,17 @@
+[
+  {
+    "comment_content": "I love MVC architecture! And your blog post really helped me understand it even more, thank you!",
+    "blog_id": 1,
+    "author_id": 2
+  },
+  {
+    "comment_content": "Fantastic and thoughtful post on authentication vs. authorization. Very informative!",
+    "blog_id": 2,
+    "author_id": 3
+  },
+  {
+    "comment_content": "I hope you know there are additional ORMs besides sequelize...your post was very one-dimensional.",
+    "blog_id": 3,
+    "author_id": 1
+  }
+]
