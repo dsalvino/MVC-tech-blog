@@ -1,0 +1,23 @@
+
+[
+    {
+      "name": "denis",
+      "email": "denis@me.com",
+      "password": "password12345"
+    },
+    {
+      "name": "denks",
+      "email": "denks@hotmail.com",
+      "password": "password12345"
+    },
+    {
+      "name": "davinci",
+      "email": "davinci@icloud.com",
+      "password": "password12345"
+    },
+    {
+      "name": "salvinichi",
+      "email": "salvinichi@icloud.com",
+      "password": "password12345"
+    }
+  ]
