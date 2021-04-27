@@ -4,13 +4,16 @@ const { Author } = require('../../models');
 // CREATE New Author on Signup:
 router.post('/', async (req, res) => {
   try {
-    const authorData = await Author.create(req.body);
-
+    console.log(req.body);
+    const userData = await Author.create(req.body);
+    console.log(userData);
     req.session.save(() => {
-      req.session.user_id = authorData.id;
+      req.session.user_id = userData.id;
+      req.session.username = userData.username;
       req.session.logged_in = true;
 
-      res.status(200).json(authorData);
+      res.status(200).json(userData);
+      console.log(userData);
     });
   } catch (err) {
     res.status(400).json(err);
@@ -40,7 +43,7 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = authorData.id;
       req.session.logged_in = true;
-      
+
       res.json({ author: authorData, message: 'You are now logged in!' });
     });
 
